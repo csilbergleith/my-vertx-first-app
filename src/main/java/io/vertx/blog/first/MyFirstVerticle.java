@@ -18,6 +18,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * From the blog at https://vertx.io/blog/combine-vert-x-and-mongo-to-build-a-giant/
+ * Start MpngpDB with: "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
+ *
  * This is a verticle. A verticle is a _Vert.x component_. This verticle is implemented in Java, but you can
  * implement them in JavaScript, Groovy, Ruby or Ceylon.
  */
@@ -198,6 +201,7 @@ public class MyFirstVerticle extends AbstractVerticle {
             }
           });
         } else {
+          System.out.println("The database has " + count.result().toString() + " items.");
           next.handle(Future.<Void>succeededFuture());
         }
       } else {

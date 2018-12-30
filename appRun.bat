@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk1.8.0_144\bin\java.exe" -Dfile.encoding=windows-1252 -jar C:\Users\csilb\Documents\java\my-vertx-first-app\target\my-first-app-1.0-SNAPSHOT-fat.jar
